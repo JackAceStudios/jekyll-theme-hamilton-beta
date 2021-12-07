@@ -30,6 +30,10 @@ layout: default
 
   </header>
 
+  {% if page.excerpt_image %}
+    <img src="{{ page.excerpt_image }}" />
+  {% endif %}
+  
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
