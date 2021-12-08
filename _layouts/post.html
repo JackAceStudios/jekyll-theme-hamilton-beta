@@ -30,17 +30,9 @@ layout: default
 
   </header>
 
-  {% if page.excerpt_image %}
-    xi-x
-    <img src="{{ page.excerpt_image }}" />
-    xi-y
-  {% endif %}
-  
   <div class="post-content e-content" itemprop="articleBody">
     {% if page.excerpt_image %}
-      xi2-x
-      <img src="{{ page.excerpt_image }}" />
-      xi2-y
+      <img src="{{ page.excerpt_image }}" class="excerpt-image" />
     {% endif %}
 
     {{ content }}
